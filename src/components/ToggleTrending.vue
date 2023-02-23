@@ -71,7 +71,7 @@ input:checked + .slider:before {
 
 /*------ ADDED CSS ---------*/
 .slider:after {
-  content: "Today";
+  content: "Daily";
   color: white;
   display: block;
   position: absolute;
@@ -80,12 +80,12 @@ input:checked + .slider:before {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  font-size: 10px;
+  font-size: 12px;
   font-family: Verdana, sans-serif;
 }
 
 input:checked + .slider:after {
-  content: "This Week";
+  content: "Weekly";
 }
 
 /*--------- END --------*/
