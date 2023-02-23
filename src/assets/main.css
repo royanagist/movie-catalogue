@@ -1,0 +1,9 @@
+/* variables */
+:root {
+    --bg-dark-blue: 3, 37, 65;
+    --bg-light-blue: 14, 110, 184;
+  }
+
+#app {
+    background-color: #edf6f9;
+}
