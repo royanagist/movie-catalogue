@@ -2,7 +2,7 @@
 import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { EffectCoverflow, Pagination } from "swiper";
-import MovieItem from "./MovieItem.vue";
+import MovieItem from "./movieItem.vue";
 import ToggleTrending from "./ToggleTrending.vue";
 
 export default {
@@ -33,7 +33,6 @@ export default {
           method: "get",
         });
         this.trendingList = data.results;
-        console.log(this.trendingList[0]);
       } catch (error) {
         console.log(error);
       }
@@ -50,11 +49,6 @@ export default {
   created() {
     this.fetchTrending();
   },
-  mounted() {
-    // const swiperSlide = document.querySelectorAll(".swiper-slide");
-    const swiperSlide = document.getElementsByClassName("swiper-slide");
-    console.log(swiperSlide);
-  },
 };
 </script>
 
@@ -66,7 +60,8 @@ export default {
   <swiper
     :effect="'coverflow'"
     :grabCursor="true"
-    :centeredSlides="true"
+    :preventClicks="true"
+    :centeredSlides="false"
     :slidesPerView="'auto'"
     :coverflowEffect="{
       rotate: -10,
@@ -79,7 +74,7 @@ export default {
     :pagination="{
       clickable: true,
     }"
-    :loop="true"
+    :loop="false"
     :breakpoints="{
       '640': {
         slidesPerView: 2,
