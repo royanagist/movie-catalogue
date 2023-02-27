@@ -39,13 +39,11 @@ export default {
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <RouterLink class="nav-link text-light" to="/">
-              Trending
-            </RouterLink>
+            <RouterLink class="nav-link text-light" to="/"> Movies </RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link text-light" to="/about"
-              >Upcoming</RouterLink
+            <RouterLink class="nav-link text-light" to="/tv"
+              >TV Shows</RouterLink
             >
           </li>
           <li class="nav-item dropdown">
