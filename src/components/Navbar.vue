@@ -15,7 +15,7 @@ export default {
     <div class="container-fluid">
       <a class="navbar-brand text-light" href="#">
         <img
-          src="../../public/logo.png"
+          src="/logo.png"
           alt="Logo"
           width="30"
           class="d-inline-block align-text-top"

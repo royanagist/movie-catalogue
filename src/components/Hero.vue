@@ -10,7 +10,7 @@
 
 <style scoped>
 .hero-bg {
-  background: url("../../public/bg.jpg") center center;
+  background: url("/bg.jpg") center center;
   padding: 70px 200px;
 }
 h1 {
